@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.popins-family {
+    font-family: "Poppins", sans-serif;
+}
+
 .menu-lines {
     width: 30px;
     height: 5px;
     margin-bottom: 5px;
-    background-color: white;
+    background: linear-gradient(180deg, #2F4FB6 0%, #152350 100%) !important;
     z-index: 10;
     transition: all 300ms linear;
     border-radius: 10px;
@@ -23,16 +29,82 @@
     transform: rotate(-44deg);
 }
 
-.gap-24 {
-    gap: 24px;
+.gap-32 {
+    gap: 32px;
 }
+
 /* ---------section-1---------- */
+.hero-bg {
+    background-image: url(../image/png/hero-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.hero-left-layer {
+    left: -14%;
+    top: -44%;
+}
+
+.mx-w-1240 {
+    max-width: 1240px !important;
+}
+
+.nav-bg {
+    border-radius: 65px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.px-24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.nav-btn {
+    border-radius: 103px;
+    padding: 12px 24px;
+    background: linear-gradient(180deg, #2F4FB6 0%, #152350 100%);
+    transition: all 200ms linear;
+    border: 2px solid;
+}
+
+.nav-btn:hover {
+    border-radius: 103px;
+    padding: 12px 24px;
+    background: white;
+    color: #2F4EB5 !important;
+}
+
+/* ----------line-height----------- */
+.lh-100 {
+    line-height: 100%;
+}
+
+.lh-135 {
+    line-height: 135%;
+}
+
+.lh-120 {
+    line-height: 120%;
+}
+
+.lh-150 {
+    line-height: 150%;
+}
+
+.lts-0 {
+    letter-spacing: 0;
+}
+
 @media (max-width:991.98px) {
 
     .nav-link {
         display: flex !important;
         flex-direction: column;
-        background: #00243C !important;
+        background: white !important;
         width: 100%;
         min-height: 100vh;
         position: fixed;
