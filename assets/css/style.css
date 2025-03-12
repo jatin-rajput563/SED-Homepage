@@ -113,6 +113,11 @@
     max-width: 426px;
 }
 
+.main-girl-img {
+    left: 0;
+    bottom: -67px;
+}
+
 /* ----------line-height----------- */
 .lh-100 {
     line-height: 100%;
