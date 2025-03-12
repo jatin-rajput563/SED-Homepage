@@ -33,11 +33,16 @@
     gap: 32px;
 }
 
+.mx-w-1140 {
+    max-width: 1140px !important;
+}
+
 /* ---------section-1---------- */
 .hero-bg {
     background-image: url(../image/png/hero-bg.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-left-layer {
@@ -78,6 +83,36 @@
     color: #2F4EB5 !important;
 }
 
+.mx-w-570 {
+    max-width: 570px;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.download-box {
+    border-radius: 6px;
+    padding: 10px 12px;
+    max-width: 150px;
+}
+
+.download-box:hover {
+    opacity: 75% !important;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pt-102 {
+    padding-top: 102px;
+}
+
+.mx-w-426 {
+    max-width: 426px;
+}
+
 /* ----------line-height----------- */
 .lh-100 {
     line-height: 100%;
@@ -97,6 +132,10 @@
 
 .lts-0 {
     letter-spacing: 0;
+}
+
+.lts-8 {
+    letter-spacing: 3px;
 }
 
 @media (max-width:991.98px) {
