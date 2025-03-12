@@ -4,7 +4,7 @@ const navbarbtn = () => {
     document.getElementById("transparent").classList.toggle("bg-transparent")
     document.getElementById("rotates-2").classList.toggle("rotate-45")
     document.body.classList.toggle("overflow-hidden")
-}
+};
 $('.slider').slick({
     dots: false,
     infinite: true,
@@ -14,7 +14,7 @@ $('.slider').slick({
     autoplaySpeed: 800,
     pauseOnMouseEnter: true,
     slidesToShow: 8,
-    slidesToScroll: 8,
+    slidesToScroll: 1,
     responsive: [
         {
             breakpoint: 1024,

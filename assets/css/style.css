@@ -58,6 +58,18 @@
     max-width: 1240px !important;
 }
 
+.ml-80 {
+    margin-left: 80px;
+}
+
+.max-w-1320 {
+    max-width: 1320px !important;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
 .nav-bg {
     border-radius: 65px;
 }
@@ -128,9 +140,8 @@
 }
 
 .main-girl-img {
-    right: 11%;
-    bottom: 17px;
-    height: 604px;
+    right: 16%;
+    bottom: -9%;
 }
 
 .red-parabox {
@@ -242,6 +253,14 @@
 
 .mt-60 {
     margin-top: 60px;
+}
+
+.footer-text-hover {
+    transition: all 200ms linear;
+}
+
+.footer-text-hover:hover {
+    color: var(--dark-blue) !important;
 }
 
 /* ----------line-height----------- */
