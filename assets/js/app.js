@@ -8,24 +8,28 @@ const navbarbtn = () => {
 $('.slider').slick({
     dots: false,
     infinite: true,
-    speed: 300,
+    centerMode: true,
+    centerPadding: '60px',
+    autoplay: true,
+    autoplaySpeed: 800,
+    pauseOnMouseEnter: true,
     slidesToShow: 8,
     slidesToScroll: 8,
     responsive: [
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToShow: 5,
+                slidesToScroll: 1,
                 infinite: true,
-                dots: true
+                dots: false
             }
         },
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 3,
+                slidesToScroll: 1
             }
         },
         {
@@ -35,8 +39,5 @@ $('.slider').slick({
                 slidesToScroll: 1
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });
