@@ -14,6 +14,7 @@
     --color-red: #A40707;
     --bold-grey: #43434D;
     --dark-black: #020202;
+    --dark-white: #22222205;
 }
 
 .fs-sm {
@@ -70,4 +71,8 @@
 
 .dark-black {
     color: var(--dark-black) !important;
+}
+
+.dark-white {
+    background-color: var(--dark-white);
 }
