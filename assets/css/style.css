@@ -156,6 +156,13 @@
     margin-top: 40px;
 }
 
+/* ---------footer---------- */
+.mx-w-424 {
+    max-width: 424px;
+}
+.footer-icon{
+
+}
 /* ----------line-height----------- */
 .lh-100 {
     line-height: 100%;
