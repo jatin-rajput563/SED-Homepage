@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 .popins-family {
     font-family: "Poppins", sans-serif;
+}
+
+.outfit-family {
+    font-family: "Outfit", sans-serif;
+}
+
+.min-h-890 {
+    min-height: 890px;
 }
 
 .menu-lines {
@@ -86,15 +95,13 @@
 
 .nav-btn {
     border-radius: 103px;
-    padding: 12px 24px;
+    padding: 18px 24px;
     background: linear-gradient(180deg, #2F4FB6 0%, #152350 100%);
     transition: all 200ms linear;
     border: 2px solid;
 }
 
 .nav-btn:hover {
-    border-radius: 103px;
-    padding: 12px 24px;
     background: white;
     color: #2F4EB5 !important;
 }
@@ -141,7 +148,7 @@
 
 .main-girl-img {
     right: 16%;
-    bottom: -9%;
+    bottom: 6%;
 }
 
 .red-parabox {
@@ -153,12 +160,60 @@
 }
 
 .red-box {
-    width: 204px;
-    height: 140px;
+    max-width: 204px;
     border-radius: 12px;
     padding: 24px;
-    bottom: 8%;
-    left: -21%;
+    bottom: 134px;
+    left: -20px;
+}
+
+.green-box {
+    max-width: 204px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 24px;
+    top: 86px;
+    right: 0;
+}
+
+.green-parabox {
+    width: 156px;
+    border-radius: 4px;
+    padding: 2px 8px;
+    background: #FCF1F1;
+    border: 0.5px solid #07A423;
+}
+
+.pl-6 {
+    padding-left: 6px;
+}
+
+.text-hover {
+    padding: 2px 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-hover:hover {
+    color: var(--dark-blue) !important;
+}
+
+.text-hover::before {
+    content: '';
+    background: linear-gradient(90deg, #294b7800 0%, #294B78 50%, rgba(41, 75, 120, 0) 100%);
+    position: absolute;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-hover:hover::before {
+    width: 100%;
+}
+
+.mx-w-452 {
+    max-width: 452px;
 }
 
 /* ---------section-2---------- */
@@ -166,8 +221,11 @@
     max-width: 100px;
 }
 
-.ml-80 {
-    margin-left: 80px;
+.slick-track {
+    display: flex !important;
+    gap: 80px !important;
+    align-items: center !important;
+
 }
 
 .mx-w-514 {
@@ -212,8 +270,8 @@
 }
 
 .footer-icon {
-    max-width: 40px;
-    padding: 11.67px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
     background: linear-gradient(180deg, #2F4FB6 0%, #152350 100%);
     transition: all 200ms linear;
@@ -288,6 +346,18 @@
     letter-spacing: 3px;
 }
 
+@media (max-width:1044.98px) {
+    .red-box {
+        left: -70px;
+    }
+
+    .green-box {
+        left: 66px;
+        top: -75px;
+    }
+
+}
+
 @media (max-width:991.98px) {
 
     .nav-link {
@@ -352,4 +422,7 @@
         display: none;
     }
 
+    .mt-42 {
+        margin-top: 20px;
+    }
 }

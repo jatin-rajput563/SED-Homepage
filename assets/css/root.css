@@ -77,6 +77,12 @@
     background-color: var(--dark-white);
 }
 
+@media (max-width:1120px) {
+    :root {
+        --fs-3xl: 53px;
+    }
+}
+
 @media (max-width:576.98px) {
     :root {
         --fs-2xl: 34px;
