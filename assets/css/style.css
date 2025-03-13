@@ -25,17 +25,21 @@
     display: flex;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .z-5 {
     z-index: 5;
 
 }
 
 .rotate40 {
-    transform: rotate(40deg);
+    transform: rotate(42deg);
 }
 
 .rotate-45 {
-    transform: rotate(-44deg);
+    transform: rotate(-43deg);
 }
 
 .bg-transparent {
@@ -94,12 +98,11 @@
     padding: 18px 24px;
     background: linear-gradient(180deg, #2F4FB6 0%, #152350 100%);
     transition: all 200ms linear;
-    border: 2px solid;
+    border: none;
 }
 
 .nav-btn:hover {
-    background: white;
-    color: #2F4EB5 !important;
+    background: #FF6D41;
 }
 
 .mx-w-570 {
@@ -114,20 +117,22 @@
     border-radius: 6px;
     padding: 10px 12px;
     max-width: 150px;
+    transition: all 200ms linear;
 }
 
 .download-box-2:hover {
-    opacity: 75% !important;
+    transform: scale(1.1);
 }
 
 .download-box {
     border-radius: 6px;
     padding: 10px 12px;
     max-width: 150px;
+    transition: all 200ms linear;
 }
 
 .download-box:hover {
-    opacity: 75% !important;
+    transform: scale(1.1);
 }
 
 .pb-40 {
@@ -176,7 +181,7 @@
     width: 156px;
     border-radius: 4px;
     padding: 2px 8px;
-    background: #FCF1F1;
+    background: #F3FCF1;
     border: 0.5px solid #07A423;
 }
 
@@ -185,27 +190,29 @@
 }
 
 .text-hover {
-    padding: 2px 0;
     position: relative;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .text-hover:hover {
     color: var(--dark-blue) !important;
 }
 
-.text-hover::before {
+.text-hover::after {
     content: '';
     background: linear-gradient(90deg, #294b7800 0%, #294B78 50%, rgba(41, 75, 120, 0) 100%);
     position: absolute;
-    bottom: 0px;
+    bottom: -2px;
+    left: 50%;
     width: 0;
     height: 2px;
     transition: all 0.3s ease-in-out;
 }
 
-.text-hover:hover::before {
+.text-hover:hover::after {
     width: 100%;
+    left: 0;
 }
 
 .mx-w-452 {
@@ -345,14 +352,19 @@
     letter-spacing: 3px;
 }
 
+.mt-42 {
+    margin-top: 42px;
+}
+
 @media (max-width:1044.98px) {
     .red-box {
         left: -70px;
+        bottom: 120px;
     }
 
     .green-box {
-        left: 66px;
-        top: -75px;
+        left: -66px;
+        top: 48px;
     }
 
 }
@@ -424,6 +436,10 @@
     .mt-42 {
         margin-top: 20px;
     }
+
+    .main-girl-img {
+        height: 400px;
+    }
 }
 
 @media (min-width:992px) {
@@ -435,7 +451,11 @@
         position: absolute !important;
     }
 
-    .ml-80 {
-        margin-left: 80px !important;
+    .pl-45 {
+        padding-left: 45px !important;
+    }
+
+    .mt-42 {
+        margin-top: 0;
     }
 }
