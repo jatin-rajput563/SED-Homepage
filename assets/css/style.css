@@ -67,10 +67,6 @@
     max-width: 1240px !important;
 }
 
-.ml-80 {
-    margin-left: 80px;
-}
-
 .max-w-1320 {
     max-width: 1320px !important;
 }
@@ -376,6 +372,8 @@
         align-items: center;
     }
 
+
+
     .show-navbar {
         right: 0 !important;
     }
@@ -434,5 +432,9 @@
 
     .red-box {
         position: absolute !important;
+    }
+
+    .ml-80 {
+        margin-left: 80px !important;
     }
 }
