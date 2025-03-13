@@ -426,3 +426,13 @@
         margin-top: 20px;
     }
 }
+
+@media (min-width:992px) {
+    .green-box {
+        position: absolute !important;
+    }
+
+    .red-box {
+        position: absolute !important;
+    }
+}
